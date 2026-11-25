@@ -1,0 +1,72 @@
+:root {
+  /* Core Surfaces - Dark Editorial Minimalism */
+  --bg-canvas: #0B0D10;
+  --bg-surface: #12151B;
+  --bg-elevated: #171B23;
+  --bg-subtle: #1E232D;
+
+  /* Hairlines & Borders */
+  --border-hairline: rgba(244, 243, 238, 0.1);
+  --border-strong: rgba(244, 243, 238, 0.22);
+  --border-accent: rgba(245, 201, 144, 0.45);
+
+  /* Typography Hierarchy */
+  --text-primary: #F4F3EE;
+  --text-secondary: #A4AAB5;
+  --text-muted: #6C7380;
+  --text-inverse: #0B0D10;
+
+  /* Solar & Thermal Telemetry Palette */
+  --accent-solar: #F5C990;
+  --accent-solar-strong: #E4AF6A;
+  --accent-solar-muted: rgba(245, 201, 144, 0.14);
+  --accent-cool-roof: #88B9C9;
+  --accent-cool-roof-muted: rgba(136, 185, 201, 0.14);
+  --accent-heat: #D97B59;
+  --accent-shadow: #3E4656;
+  --accent-positive: #86B88D;
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing & Radii */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Layout Z-Layers */
+  --z-map: 0;
+  --z-overlay: 10;
+  --z-panel: 20;
+  --z-modal: 30;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
